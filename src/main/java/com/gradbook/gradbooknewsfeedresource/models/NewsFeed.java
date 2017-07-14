@@ -25,9 +25,19 @@ public class NewsFeed {
     @Column(name="last_modified")
     private Timestamp lastModified;
 
+    @Transient
+    private String userName;
 
     public NewsFeed(){
 
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public Long getId() {
