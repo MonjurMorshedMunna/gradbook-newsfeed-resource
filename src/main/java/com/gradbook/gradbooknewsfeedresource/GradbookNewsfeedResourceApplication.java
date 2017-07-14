@@ -13,26 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @EnableResourceServer
 @SpringBootApplication
-@RestController
 public class GradbookNewsfeedResourceApplication {
 
-	
-	@RequestMapping("/resource/endpoint")
-	public String endPoint(Principal principal){
-		return "Hello "+principal.getName()+"! Welcome to our resource";
-	}
-	
-	
-	@Bean
-	public RemoteTokenServices tokenService(){
-		RemoteTokenServices tokenService = new RemoteTokenServices();
-		tokenService.setCheckTokenEndpointUrl("http://localhost:9090/oauth/check_token");
-		tokenService.setClientId("gradbook");
-		tokenService.setClientSecret("gradbook");
-		return tokenService;
-	}
-	
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(GradbookNewsfeedResourceApplication.class, args);
 	}
