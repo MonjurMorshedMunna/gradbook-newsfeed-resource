@@ -7,8 +7,6 @@ import java.util.concurrent.atomic.AtomicLong;
  */
 public class ActivityLogger {
 
-
-
     private String userId;
 
     private Timestamp accessTime;
@@ -17,12 +15,21 @@ public class ActivityLogger {
 
     private String methodName;
 
+    private Long roleId;
+
     private static final AtomicLong count = new AtomicLong(0);
 
     public ActivityLogger() {
     }
 
 
+    public Long getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(Long roleId) {
+        this.roleId = roleId;
+    }
 
     public String getUserId() {
         return userId;
