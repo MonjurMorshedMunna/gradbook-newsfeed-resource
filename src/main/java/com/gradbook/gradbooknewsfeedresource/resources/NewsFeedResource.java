@@ -26,6 +26,11 @@ public class NewsFeedResource {
         return helper.getNewsFeed(principal);
     }
 
+    @GetMapping("/admin")
+    String getAdminTest(Principal principal){
+        return "THis is for admin";
+    }
+
     @PostMapping("/newsFeed/saveNewsFeed")
     ResponseEntity<?> saveNewsFeed(Principal principal, @RequestBody NewsFeed newsFeed){
         return helper.saveNewsFeed(principal, newsFeed);
