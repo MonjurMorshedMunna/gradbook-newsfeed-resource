@@ -1,6 +1,7 @@
 package com.gradbook.gradbooknewsfeedresource.models;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
@@ -9,7 +10,7 @@ import java.sql.Timestamp;
 @Entity
 @Cacheable
 @Table(name="users")
-public class User {
+public class User implements Serializable{
 
     @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.AUTO)

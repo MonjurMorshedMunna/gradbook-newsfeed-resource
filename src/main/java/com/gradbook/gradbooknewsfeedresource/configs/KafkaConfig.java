@@ -1,3 +1,4 @@
+/*
 package com.gradbook.gradbooknewsfeedresource.configs;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -29,3 +30,4 @@ public class KafkaConfig {
         return new KafkaTemplate<String, String>(producerFactory());
     }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package com.gradbook.gradbooknewsfeedresource.configs;
 
 import com.gradbook.gradbooknewsfeedresource.models.ActivityLogger;
@@ -52,3 +53,4 @@ public class NewsFeedAspect {
 
     }
 }
+*/

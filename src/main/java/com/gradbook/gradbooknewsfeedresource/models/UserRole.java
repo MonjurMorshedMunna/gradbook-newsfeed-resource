@@ -1,10 +1,11 @@
 package com.gradbook.gradbooknewsfeedresource.models;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name="user_role")
-public class UserRole {
+public class UserRole implements Serializable{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
