@@ -11,6 +11,7 @@ import java.util.List;
 /**
  * Created by Munna on 14-Jul-17.
  */
+
 @Repository
 @CacheConfig(cacheNames = "userFriendRepository")
 public interface UserFriendRepository extends JpaRepository<UserFriend, Long> {
